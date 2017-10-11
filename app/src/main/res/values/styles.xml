@@ -23,8 +23,6 @@
         <item name="android:padding">8dp</item>
     </style>
     <style name="CheckBox_RememberMe" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:checkboxStyle">@android:color/darker_gray</item>
         <item name="colorAccent">@android:color/darker_gray</item>
     </style>
     <style name="MyTextView" parent="@android:style/TextAppearance.Small.Inverse">

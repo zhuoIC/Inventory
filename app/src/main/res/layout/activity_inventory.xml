@@ -19,7 +19,8 @@
             android:id="@+id/edtName"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:inputType="text" />
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
     </TableRow>
     <TableRow>
@@ -34,7 +35,8 @@
             android:id="@+id/edtDescription"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:inputType="text"/>
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
     </TableRow>
     <TableRow>
@@ -48,7 +50,8 @@
             android:id="@+id/edtDateCreation"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:inputType="date"/>
+            android:inputType="date"
+            tools:ignore="LabelFor" />
 
     </TableRow>
     <TableRow>

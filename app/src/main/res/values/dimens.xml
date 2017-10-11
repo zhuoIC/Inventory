@@ -6,4 +6,6 @@
     <dimen name="btnSignIn_margin">32dp</dimen>
     <dimen name="btnSigIn_width">200dp</dimen>
     <dimen name="lly_SignIn_padding">32dp</dimen>
+    <dimen name="imgDashboradWidth">90dp</dimen>
+    <dimen name="imgDashboradHeight">100dp</dimen>
 </resources>
