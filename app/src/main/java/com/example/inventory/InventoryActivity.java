@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * En esta activity se dan de alta los productos
+ * @author Nicolás Hernández Jiménez
+ */
+
 public class InventoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

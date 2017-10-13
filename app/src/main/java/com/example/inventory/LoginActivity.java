@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Pide los datos de usuario para acceder a la aplicación
+ * @author
+ */
+
 public class LoginActivity extends AppCompatActivity {
     private TextView txvSignUp;
     private Button btnSignIn;

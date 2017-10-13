@@ -11,6 +11,11 @@ import com.example.inventory.R;
 import java.util.ArrayList;
 import java.util.Vector;
 
+/**
+ * Activity que muestra un panel de iconos
+ * @author Nicolás Hernández Jiménez
+ */
+
 public class DashboardActivity extends AppCompatActivity {
     private GridLayout gridDashboard;
 

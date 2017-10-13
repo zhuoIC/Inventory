@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
+ * Muestra el logo de la aplicación
  * @author Nicolás Hernández Jiménez
  */
 
