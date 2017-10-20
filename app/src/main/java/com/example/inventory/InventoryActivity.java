@@ -6,7 +6,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 /**
- * En esta activity se dan de alta los productos
+ * En esta activity se dan de alta el inventario
  * @author Nicolás Hernández Jiménez
  */
 
