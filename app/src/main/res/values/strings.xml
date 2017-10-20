@@ -9,8 +9,26 @@
     <string name="btnGoogleSignIn">Google</string>
     <string name="btnFacebookSignIn">Login in with Facebook</string>
 
-    <string name="tvxName">Nombre</string>
+    <string name="tvxName">Nombre:</string>
     <string name="txvDescription">Descripción:</string>
     <string name="txvDateCreation">Fecha Creación:</string>
     <string name="btnChange">Cambiar Estado</string>
+    <string name="txvSerial">Serial:</string>
+    <string name="txvSeller">Vendedor:</string>
+    <string name="txvModel">Modelo:</string>
+    <string name="txvCategory">Categoría:</string>
+    <string name="txvSubcategory">Subcategoría:</string>
+    <string name="txvType">Tipo:</string>
+    <string name="txvPrice">Precio:</string>
+    <string name="txvUrl">Url:</string>
+    <string name="txvNotes">Notas:</string>
+    <string-array name="spnCategory">
+        <item>Periférico</item>
+    </string-array>
+    <string-array name="spnSubcategory">
+        <item>Monitor</item>
+    </string-array>
+    <string-array name="spnType">
+        <item>Inventariable</item>
+    </string-array>
 </resources>
