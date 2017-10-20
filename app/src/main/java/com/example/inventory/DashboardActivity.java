@@ -9,10 +9,11 @@ import android.support.v7.widget.GridLayout;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.inventory.R;
 
 import java.util.ArrayList;
 import java.util.Vector;
+
+import static com.example.inventory.R.drawable.inventory;
 
 /**
  * Activity que muestra un panel de iconos
@@ -22,21 +23,22 @@ import java.util.Vector;
 public class DashboardActivity extends AppCompatActivity {
     private GridLayout gridDashboard;
     private ClickListenerDashboard listenerDashboard = new ClickListenerDashboard();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_support);
         gridDashboard = (GridLayout) findViewById(R.id.gridDashboard);
 
-        // Definir un array de int, que contendrá el id de las imágenes Inventory, Product, Dependecias
-        int[] images = {R.drawable.chair, R.drawable.closet, R.drawable.cpu, R.drawable.inventory,
+        // Definir un array de int, que contendrá el id de las imágenes
+        /**int[] images = {R.drawable.chair, R.drawable.closet, R.drawable.cpu, inventory,
                 R.drawable.keyboard, R.drawable.monitor, R.drawable.mouse, R.drawable.printer,
                 R.drawable.proyector, R.drawable.table, R.drawable.whiteboard};
+        **/
+        // Definir un array de int, que contendrá el id de las imágenes Inventory, Product, Dependencias, Secciones y Preferencias
+        int[] images = {R.drawable.product, R.drawable.inventory, R.drawable.dependencies, R.drawable.preferences, R.drawable.sections};
 
         // No se define en Java/Android arrays de objetos. Se utiliza Vector o Colecciones.
         // ImageView[] imageViews = new ImageView[images.length];
-
         // No utilizamos la clase Vector porque no trabajamos con hilos y no se requiere sincronización.
         // Vector<ImageView> vectorImages = new Vector<ImageView>();
         // ArrayList debe ser parametrizado
@@ -51,10 +53,11 @@ public class DashboardActivity extends AppCompatActivity {
         ImageView imageView;
         float width = getResources().getDimension(R.dimen.imgDashboradWidth);
         float height = getResources().getDimension(R.dimen.imgDashboradHeight);
+
         for (int   i = 0; i < images.length; i++) {
             imageView = new ImageView(this);
             imageView.setImageResource(images[i]);
-            imageView.setId(images[3]);
+            imageView.setId(images[i]);
             imageView.setOnClickListener(listenerDashboard);
             GridLayout.LayoutParams params = new GridLayout.LayoutParams();
             params.width = (int) width;
@@ -76,11 +79,12 @@ public class DashboardActivity extends AppCompatActivity {
                 case R.drawable.inventory:
                     intent = new Intent(DashboardActivity.this, InventoryActivity.class);
                     break;
-                /*case R.drawable.product:
+                case R.drawable.product:
                     intent = new Intent(DashboardActivity.this, ProductActivity.class);
-                    break;*/
+                    break;
             }
-            startActivity(intent);
+            if (intent != null)
+                startActivity(intent);
         }
     }
 }
