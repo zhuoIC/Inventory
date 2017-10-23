@@ -27,4 +27,7 @@
     </style>
     <style name="MyTextView" parent="@android:style/TextAppearance.Small.Inverse">
     </style>
+    <style name="DashboardEditText">
+        <item name="android:padding">6dp</item>
+    </style>
 </resources>

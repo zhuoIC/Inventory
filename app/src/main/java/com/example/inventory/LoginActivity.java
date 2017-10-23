@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 /**
  * Pide los datos de usuario para acceder a la aplicación
- * @author
+ * @author Nicolás Hernández Jiménez
  */
 
 public class LoginActivity extends AppCompatActivity {

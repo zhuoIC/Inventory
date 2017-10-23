@@ -64,7 +64,7 @@
             android:id="@+id/chkRemember"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.8"
+            android:layout_weight="0.7"
             android:text="@string/chkRemember"
             android:textAppearance="@android:style/TextAppearance.Small.Inverse"
             android:theme="@style/CheckBox_RememberMe"/>
@@ -73,7 +73,7 @@
             android:id="@+id/txvSingUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
+            android:layout_weight="0.3"
             android:text="@string/btnSignUp"
             android:theme="@style/MyTextView" />
 
