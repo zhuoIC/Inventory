@@ -23,6 +23,13 @@ import static com.example.inventory.R.drawable.inventory;
 public class DashboardActivity extends AppCompatActivity {
     private GridLayout gridDashboard;
     private ClickListenerDashboard listenerDashboard = new ClickListenerDashboard();
+    private static int INVENTORY;
+    private static int PRODUCT;
+    private static int DEPENDENCY;
+    private static int SECTION;
+    private static int SETTING;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
                 R.drawable.proyector, R.drawable.table, R.drawable.whiteboard};
         **/
         // Definir un array de int, que contendrá el id de las imágenes Inventory, Product, Dependencias, Secciones y Preferencias
-        int[] images = {R.drawable.product, R.drawable.inventory, R.drawable.dependencies, R.drawable.preferences, R.drawable.sections};
+        int[] images = {R.drawable.product, R.drawable.inventory, R.drawable.dependencies}; //,R.drawable.preferences, R.drawable.sections};
 
         // No se define en Java/Android arrays de objetos. Se utiliza Vector o Colecciones.
         // ImageView[] imageViews = new ImageView[images.length];
@@ -57,7 +64,7 @@ public class DashboardActivity extends AppCompatActivity {
         for (int   i = 0; i < images.length; i++) {
             imageView = new ImageView(this);
             imageView.setImageResource(images[i]);
-            imageView.setId(images[i]);
+            generateID(images[i], imageView);
             imageView.setOnClickListener(listenerDashboard);
             GridLayout.LayoutParams params = new GridLayout.LayoutParams();
             params.width = (int) width;
@@ -69,22 +76,35 @@ public class DashboardActivity extends AppCompatActivity {
         }
     }
 
-    class ClickListenerDashboard implements View.OnClickListener{
+    private void generateID(int id, ImageView imageView){
+        switch (id){
+            case R.drawable.inventory:
+                INVENTORY = View.generateViewId();
+                imageView.setId(INVENTORY);
+                break;
+            case R.drawable.product:
+                PRODUCT = View.generateViewId();
+                imageView.setId(PRODUCT);
+                break;
+            case R.drawable.dependencies:
+                DEPENDENCY = View.generateViewId();
+                imageView.setId(DEPENDENCY);
+                break;
+        }
+    }
 
+    class ClickListenerDashboard implements View.OnClickListener{
 
         @Override
         public void onClick(View view) {
             Intent intent = null;
-            switch (view.getId()){
-                case R.drawable.inventory:
+            if(view.getId() == INVENTORY)
                     intent = new Intent(DashboardActivity.this, InventoryActivity.class);
-                    break;
-                case R.drawable.product:
+            else if(view.getId() == PRODUCT)
                     intent = new Intent(DashboardActivity.this, ProductActivity.class);
-                    break;
-            }
-            if (intent != null)
-                startActivity(intent);
+            else if(view.getId() == DEPENDENCY)
+                    intent = new Intent(DashboardActivity.this, DependencyActivity.class);
+            else if (intent != null) startActivity(intent);
         }
     }
 }
