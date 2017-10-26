@@ -104,7 +104,8 @@ public class DashboardActivity extends AppCompatActivity {
                     intent = new Intent(DashboardActivity.this, ProductActivity.class);
             else if(view.getId() == DEPENDENCY)
                     intent = new Intent(DashboardActivity.this, DependencyActivity.class);
-            else if (intent != null) startActivity(intent);
+            if(intent != null)
+                startActivity(intent);
         }
     }
 }
