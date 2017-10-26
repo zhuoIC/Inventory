@@ -19,6 +19,14 @@ public class Dependency {
         this.description = description;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String shortname) {
+        this.name = shortname;
+    }
+
     public String getShortname() {
         return shortname;
     }
