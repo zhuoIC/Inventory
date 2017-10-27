@@ -67,7 +67,8 @@
             android:layout_weight="0.7"
             android:text="@string/chkRemember"
             android:textAppearance="@android:style/TextAppearance.Small.Inverse"
-            android:theme="@style/CheckBox_RememberMe"/>
+            android:theme="@style/CheckBox_RememberMe"
+            style="@style/text_color_CheckBox"/>
 
         <TextView
             android:id="@+id/txvSingUp"

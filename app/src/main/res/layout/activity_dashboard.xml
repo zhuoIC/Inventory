@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridDashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.inventory.DashboardActivity"
-    android:columnCount="6"
-    android:orientation="horizontal">
-
-   <Space android:layout_width="30dp"/>
+    app:columnCount="2"
+    app:orientation="horizontal"
+    tools:context="com.example.inventory.DashboardActivity"><!--
 
     <ImageView
         android:id="@+id/imgWhiteboard"
@@ -19,8 +18,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/whiteboard" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imgTable"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -29,8 +26,6 @@
         app:layout_rowWeight="1"
         app:layout_gravity="fill"
         app:srcCompat="@drawable/table" />
-
-    <Space android:layout_width="30dp"/>
 
     <ImageView
         android:id="@+id/imgProyector"
@@ -41,8 +36,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/proyector" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imgPrinter"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -51,8 +44,6 @@
         app:layout_rowWeight="1"
         app:layout_gravity="fill"
         app:srcCompat="@drawable/printer" />
-
-    <Space android:layout_width="30dp"/>
 
     <ImageView
         android:id="@+id/imgMouse"
@@ -63,8 +54,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/mouse" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imgMonitor"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -72,9 +61,7 @@
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
         app:layout_gravity="fill"
-        app:srcCompat="@drawable/product" />
-
-    <Space android:layout_width="30dp"/>
+        app:srcCompat="@drawable/monitor" />
 
     <ImageView
         android:id="@+id/imgKeyboard"
@@ -85,8 +72,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/keyboard" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imgChair"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -95,8 +80,6 @@
         app:layout_rowWeight="1"
         app:layout_gravity="fill"
         app:srcCompat="@drawable/chair" />
-
-    <Space android:layout_width="30dp"/>
 
     <ImageView
         android:id="@+id/imgInventory"
@@ -107,8 +90,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/inventory" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imageCPU"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -118,8 +99,6 @@
         app:layout_gravity="fill"
         app:srcCompat="@drawable/cpu" />
 
-    <Space android:layout_width="30dp"/>
-
     <ImageView
         android:id="@+id/imgCloset"
         android:layout_width="@dimen/imgDashboradWidth"
@@ -127,6 +106,6 @@
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"
         app:layout_gravity="fill"
-        app:srcCompat="@drawable/closet" />
+        app:srcCompat="@drawable/closet" />-->
 
-</GridLayout>
+</android.support.v7.widget.GridLayout>

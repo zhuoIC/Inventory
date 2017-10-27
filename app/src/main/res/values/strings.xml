@@ -22,6 +22,9 @@
     <string name="txvPrice">Precio:</string>
     <string name="txvUrl">Url:</string>
     <string name="txvNotes">Notas:</string>
+    <string name="imgProduct">Imagen del producto</string>
+    <string name="imgCodeQR">Código QR</string>
+
     <string-array name="spnCategory">
         <item>Periférico</item>
     </string-array>

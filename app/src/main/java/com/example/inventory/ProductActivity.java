@@ -17,7 +17,7 @@ public class ProductActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_barriers);
+        setContentView(R.layout.activity_product);
         spnCategory = (Spinner) findViewById(R.id.spnCategory);
         spnSubcategory = (Spinner) findViewById(R.id.spnSubcategory);
         spnType = (Spinner) findViewById(R.id.spnType);

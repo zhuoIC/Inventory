@@ -1,19 +1,11 @@
 package com.example.inventory;
 
 import android.content.Intent;
-import android.media.Image;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayout;
 import android.view.View;
 import android.widget.ImageView;
-
-
-import java.util.ArrayList;
-import java.util.Vector;
-
-import static com.example.inventory.R.drawable.inventory;
 
 /**
  * Activity que muestra un panel de iconos
@@ -33,7 +25,7 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard_support);
+        setContentView(R.layout.activity_dashboard);
         gridDashboard = (GridLayout) findViewById(R.id.gridDashboard);
 
         // Definir un array de int, que contendrá el id de las imágenes
