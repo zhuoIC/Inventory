@@ -23,7 +23,7 @@ public class DependencyActivity extends ListActivity {
         setContentView(R.layout.activity_dependency);
         // CASO 1: Adapter no personalizado
         //adapter = new ArrayAdapter<Dependency>(this, android.R.layout.simple_list_item_1,
-        // DependencyRepository.getInstance().getDependencies());
+        // DependencyRepository.getInstance().getSectors());
         // CASO 2: Adapter personalizado
         adapter = new DependencyAdapter(this);
         getListView().setAdapter(adapter);

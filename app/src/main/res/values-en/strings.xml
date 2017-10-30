@@ -24,4 +24,6 @@
     <string name="txvNotes">Notes:</string>
     <string name="imgProduct">Product Image</string>
     <string name="imgCodeQR">QR Code</string>
+    <string name="txvSectorDefault">Default Sector</string>
+    <string name="menu_save">Save</string>
 </resources>

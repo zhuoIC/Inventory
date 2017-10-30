@@ -34,4 +34,8 @@
     <string-array name="spnType">
         <item>Inventariable</item>
     </string-array>
+
+    <!---->
+    <string name="txvSectorDefault">Sector por defecto</string>
+    <string name="menu_save">Salvar</string>
 </resources>

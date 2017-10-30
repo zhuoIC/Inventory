@@ -34,7 +34,7 @@ public class DashboardActivity extends AppCompatActivity {
                 R.drawable.proyector, R.drawable.table, R.drawable.whiteboard};
         **/
         // Definir un array de int, que contendrá el id de las imágenes Inventory, Product, Dependencias, Secciones y Preferencias
-        int[] images = {R.drawable.product, R.drawable.inventory, R.drawable.dependencies}; //,R.drawable.preferences, R.drawable.sections};
+        int[] images = {R.drawable.product, R.drawable.inventory, R.drawable.dependencies, R.drawable.sections}; //,R.drawable.preferences};
 
         // No se define en Java/Android arrays de objetos. Se utiliza Vector o Colecciones.
         // ImageView[] imageViews = new ImageView[images.length];
@@ -82,6 +82,10 @@ public class DashboardActivity extends AppCompatActivity {
                 DEPENDENCY = View.generateViewId();
                 imageView.setId(DEPENDENCY);
                 break;
+            case R.drawable.sections:
+                SECTION = View.generateViewId();
+                imageView.setId(SECTION);
+                break;
         }
     }
 
@@ -96,6 +100,8 @@ public class DashboardActivity extends AppCompatActivity {
                     intent = new Intent(DashboardActivity.this, ProductActivity.class);
             else if(view.getId() == DEPENDENCY)
                     intent = new Intent(DashboardActivity.this, DependencyActivity.class);
+            else if(view.getId() == SECTION)
+                intent = new Intent(DashboardActivity.this, SectorActivity.class);
             if(intent != null)
                 startActivity(intent);
         }

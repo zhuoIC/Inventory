@@ -19,9 +19,9 @@ public class InventoryApplication extends Application{
         super.onCreate();
         /*
         dependencies = new ArrayList<Dependency>();
-        addDependency(new Dependency(1, "1º Ciclo Formativo Grado Superior", "1CFGS",
+        addSector(new Dependency(1, "1º Ciclo Formativo Grado Superior", "1CFGS",
                 "1CFGS Desarrollo Aplicaciones Multiplataforma"));
-        addDependency(new Dependency(2, "2º Ciclo Formativo Grado Superior", "2CFGS",
+        addSector(new Dependency(2, "2º Ciclo Formativo Grado Superior", "2CFGS",
                 "2CFGS Desarrollo Aplicaciones Multiplataforma"));*/
     }
 
